@@ -1,0 +1,1 @@
+This was one of my first projects in Python. It works as a food bank for a community. No database was implemented.
