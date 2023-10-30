@@ -35,7 +35,7 @@ while True:
                 while not empty:
                     # O procedimento menu_record() imprime as opções de registro de manutenção:
                     menu_record()
-                    field = input("Escolha uma opção: ")
+                    field = input("Escolha um tipo de manutennção para registrar: ")
                     # Validação da entrada do usuário:
                     while not field.isnumeric() or int(field) < 0 or int(field) > 9:
                         menu_record()
@@ -82,6 +82,5 @@ while True:
                     print_records([alignment_hist, balancing_hist, camber_hist, battery_hist, breaks_hist, tires_hist,
                                    oil_hist, sparkplug_hist, filters_hist])
                     input("Pressione qualquer tecla para voltar: ")
-                save()
             case 0:
                 break
